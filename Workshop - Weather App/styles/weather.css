@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/weatherbackground.png);
+    margin: 0;
+}
+
+.navbar-expand-lg{
+    padding: 0;
+}
+.navigation-div{
+    background-color: azure;
+}
+
+.card{
+    padding: 1em 0.5em 1em 0.5em;
+    background-color: azure;
+}
+
+#homeWeather{
+    width: 24rem;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 1rem 4rem;
+    max-width: fit-content;
+}
+.list-group-item{
+    background-color: azure;
+}
+#hourlyWeather{
+    height: 20rem;
+    justify-content: center;
+    margin: 4rem 1rem 1rem 4rem;
+    max-width: fit-content;
+};
+
+#aboutPage{
+    height: 20rem;
+    justify-content: center;
+    margin: 4rem 1rem 1rem 4rem;
+    max-width: fit-content;
+};

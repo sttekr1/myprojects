@@ -1,0 +1,30 @@
+body{
+    background-image: url("../img/reminderBackground.jpg");
+}
+.title{
+    text-align: center;
+    margin-top: 25px;
+}
+#reminderInput{
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+}
+input{
+    margin: 2px 0;
+}
+form{
+    margin-left: 100px;
+}
+#reminderColumns{
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+}
+.form-check{
+    text-align: left;
+    margin: 0;
+}
+.deleteInput{
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Countriespedia</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container">
+            <h1 class="display-4"><a href="/index.html">&#127757Countriespedia</a></h1>
+            <p class="lead">A simple app for gathering information about countries in the World</p>
+        </div>
+        <div class="container">
+            <button class="btn btn-primary" id="btnCurrency" data-toggle="tooltip" data-placement="top"
+                title="Countries that use euro as their main currency">Countries using EUR</button>
+            <button class="btn btn-primary" id="btnEnglish" data-toggle="tooltip" data-placement="top"
+                title="Countries that use English as their official language">English speaking countries</button>
+            <button class="btn btn-primary" id="btnMacedonia">Macedonia</button>
+        </div>
+    </div>
+    <!-- SearchBar -->
+    <div class="container">
+        <div class="input-group shadow p-3 mb-5 bg-white rounded">
+            <input type="text" class="form-control" placeholder="Enter country name or code" id="searchInput">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="searchBtn">Search</button>
+                <button class="btn btn-secondary" type="button" id="resetBtn">Clear</button>
+            </div>
+        </div>
+    </div>
+    <!-- Notification -->
+    <div class="spinner-grow text-primary" id="spinner"></div>
+
+    <!-- Results -->
+    <div class="container">
+
+        <div id="notification"></div>
+
+        <div class="row row-cols-md-3" id="cardContainer">
+            <!-- <div class="col mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png"
+                        class="card-img-top" alt="${country.name} Image">
+                    <div class="card-body">
+                        <h5 class="card-title">United Mexican States</h5>
+                        <p class="card-text">United Mexican States is country with population of 128932753 with the Area
+                            of 1964375
+                            square killometers.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Open on <a href="https://en.wikipedia.org/wiki/Mexico" target="_blank">Wikipedia</a></small>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Open on <a href="https://goo.gl/maps/s5g7imNPMDEePxzbA" target="_blank">Google Maps</a></small>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./script/app.js"></script>
+</body>
+
+</html>
